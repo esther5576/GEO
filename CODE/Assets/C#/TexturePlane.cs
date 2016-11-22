@@ -75,9 +75,6 @@ public class TexturePlane : MonoBehaviour
         back.deviceName = devices[1].name;
         this.GetComponent<Renderer>().material.mainTexture = back;
  
-        AnalyticsFunction.frontCam = true;
-        AnalyticsFunction.PictureActivity ("Switched to front camera");
- 
         back.Play();
     }
  
@@ -88,9 +85,6 @@ public class TexturePlane : MonoBehaviour
         this.transform.localEulerAngles = new Vector3(0, 270, 90);
         back.deviceName = devices[0].name;
         this.GetComponent<Renderer>().material.mainTexture = back;
- 
-        AnalyticsFunction.frontCam = false;
-        AnalyticsFunction.PictureActivity ("Switched to back camera");
  
         back.Play();
     }
