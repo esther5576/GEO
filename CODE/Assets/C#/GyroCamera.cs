@@ -6,13 +6,14 @@ public class GyroCamera : MonoBehaviour
 	private float fInitialYAngle = 0f;
 	private float fAppliedGyroYAngle = 0f;
 	private float fCalibrationYAngle = 0f;
+    private float sensibility = 2.0f;
 
-	void Start ()
+
+    void Start ()
 	{
 		Input.gyro.enabled = true;
-		Application.targetFrameRate = 60;
+		Application.targetFrameRate = 30;
 		fInitialYAngle = transform.eulerAngles.y;
-		Screen.orientation = ScreenOrientation.LandscapeLeft;
 	}
 
 	void Update ()
@@ -45,6 +46,6 @@ public class GyroCamera : MonoBehaviour
 
 	void ApplyCalibration ()
 	{
-		transform.Rotate (0f, -fCalibrationYAngle, 0f, Space.World);
+		transform.Rotate (0f, -fCalibrationYAngle * sensibility, 0f, Space.World);
 	}
 }
