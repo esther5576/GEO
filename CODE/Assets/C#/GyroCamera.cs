@@ -3,11 +3,10 @@ using System.Collections;
 
 public class GyroCamera : MonoBehaviour
 {
-	private float fInitialYAngle = 0f;
-	private float fAppliedGyroYAngle = 0f;
-	private float fCalibrationYAngle = 0f;
-    private float sensibility = 2.0f;
-
+	public float fInitialYAngle = 0f;
+	public float fAppliedGyroYAngle = 0f;
+	public float fCalibrationYAngle = 0f;
+	public float sensibility = 2.0f;
 
     void Start ()
 	{
@@ -27,6 +26,12 @@ public class GyroCamera : MonoBehaviour
 		if (GUILayout.Button ("Calibrate", GUILayout.Width (300), GUILayout.Height (100))) {
 			CalibrateYAngle ();
 		}
+
+		string _debug;
+
+		_debug = "" + -fCalibrationYAngle * sensibility;
+
+		GUI.Label(new Rect(100, 100, 100, 20), _debug);
 	}
 
 	public void CalibrateYAngle ()
