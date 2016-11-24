@@ -9,7 +9,7 @@ public class MenuVariables
 	public static GameObject panelStartAppAppName; 
 	public static GameObject panelStartAppLoupe; 
 	public static GameObject panelStartAppLoupeManche; 
-	public static GameObject panelStartApp
+	public static GameObject panelStartApp;
 
 	public static void InitVariables()
 	{
