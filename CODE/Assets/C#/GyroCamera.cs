@@ -8,7 +8,6 @@ public class GyroCamera : MonoBehaviour
 	public float fCalibrationYAngle = 0f;
 	public float sensibility = 2.0f;
 
-
     void Start ()
 	{
 		Input.gyro.enabled = true;
@@ -27,6 +26,12 @@ public class GyroCamera : MonoBehaviour
 		if (GUILayout.Button ("Calibrate", GUILayout.Width (300), GUILayout.Height (100))) {
 			CalibrateYAngle ();
 		}
+
+		string _debug;
+
+		_debug = "" + -fCalibrationYAngle * sensibility;
+
+		GUI.Label(new Rect(100, 100, 100, 20), _debug);
 	}
 
 	public void CalibrateYAngle ()
