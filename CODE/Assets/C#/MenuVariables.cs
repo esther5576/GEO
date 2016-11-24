@@ -15,7 +15,7 @@ public class MenuVariables
 	{
 		panelStartApp = GameObject.Find ("UI Root/PanelStartApp").GetComponent<UIPanel>();
 		panelStartAppMap = GameObject.Find ("UI Root/PanelStartApp/Map").GetComponent<UISprite>();
-		panelStartAppTopCorner = GameObject.Find ("UI Root/PanelStartApp/Top Corner").GetComponent<UISprite>();
+		panelStartAppTopCorner = GameObject.Find ("UI Root/GeneralPanel/Top Corner").GetComponent<UISprite>();
 		panelStartAppAppName = GameObject.Find ("UI Root/PanelStartApp/AppName").GetComponent<UISprite>();
 		panelStartAppLoupe = GameObject.Find ("UI Root/PanelStartApp/Loupe").GetComponent<UISprite>();
 		panelStartAppLoupeManche = GameObject.Find ("UI Root/PanelStartApp/LoupeManche").GetComponent<UISprite>();
