@@ -3,16 +3,22 @@ using System.Collections;
 
 public class MenuVariables 
 {
-	public static GameObject panelStartApp; 
-	public static GameObject panelStartAppMap; 
-	public static GameObject panelStartAppTopCorner; 
-	public static GameObject panelStartAppAppName; 
-	public static GameObject panelStartAppLoupe; 
-	public static GameObject panelStartAppLoupeManche; 
-	public static GameObject panelStartAppLoupeElements;
+	public static UIPanel panelStartApp; 
+	public static UISprite panelStartAppMap; 
+	public static UISprite panelStartAppTopCorner; 
+	public static UISprite panelStartAppAppName; 
+	public static UISprite panelStartAppLoupe; 
+	public static UISprite panelStartAppLoupeManche; 
+	public static UISprite panelStartAppLoupeElements;
 
 	public static void InitVariables()
 	{
-		
+		panelStartApp = GameObject.Find ("UI Root/PanelStartApp").GetComponent<UIPanel>();
+		panelStartAppMap = GameObject.Find ("UI Root/PanelStartApp/Map").GetComponent<UISprite>();
+		panelStartAppTopCorner = GameObject.Find ("UI Root/PanelStartApp/Top Corner").GetComponent<UISprite>();
+		panelStartAppAppName = GameObject.Find ("UI Root/PanelStartApp/AppName").GetComponent<UISprite>();
+		panelStartAppLoupe = GameObject.Find ("UI Root/PanelStartApp/Loupe").GetComponent<UISprite>();
+		panelStartAppLoupeManche = GameObject.Find ("UI Root/PanelStartApp/LoupeManche").GetComponent<UISprite>();
+		panelStartAppLoupeElements = GameObject.Find ("UI Root/PanelStartApp/LoupeElements").GetComponent<UISprite>();
 	}
 }
