@@ -18,7 +18,7 @@ public class TexturePlane : MonoBehaviour
         //this.transform.localScale = new Vector3 (2.0f * Mathf.Tan(0.5f* Camera.main.fieldOfView * Mathf.Deg2Rad) , 1 , (2.0f * Mathf.Tan(0.5f * Camera.main.fieldOfView * Mathf.Deg2Rad)) * Screen.width / Screen.height);
         this.transform.localScale = new Vector3(2.0f * Mathf.Tan(0.5f * Camera.main.fieldOfView * Mathf.Deg2Rad),
             1,
-            (2.0f * Mathf.Tan(0.5f * Camera.main.fieldOfView * Mathf.Deg2Rad)) * (3.0f / 4.0f)) * 3.0f;
+            (2.0f * Mathf.Tan(0.5f * Camera.main.fieldOfView * Mathf.Deg2Rad)) * (3.0f / 4.0f)) * 10.0f;
  
         //GameObject gg = GameObject.Find ("DebugPanel/LabelDebug");
  
