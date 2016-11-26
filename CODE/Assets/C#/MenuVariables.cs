@@ -23,7 +23,27 @@ public class MenuVariables
 	public static UISprite panelPrincipalAppMissionsEnCours; 
 	public static UIButton panelPrincipalAppTakeJobButton; 
 	public static UIButton panelPrincipalAppMissionsEnCoursButton; 
-	public static UIButton panelPrincipalAppNouvellesMissionsButton; 
+	public static UIButton panelPrincipalAppNouvellesMissionsButton;
+	public static UIButton panelPrincipalAppGPSButton; 
+	public static UIButton panelPrincipalAppSMSButton; 
+	public static UIButton panelPrincipalAppGaleryButton; 
+	#endregion
+
+	#region Panel Textos App
+	public static UIPanel panelTextoApp;
+	public static UISprite panelTextoAppBackground;
+	public static UISprite panelTextoAppTopCorner;
+	#endregion
+
+	#region Panel Galerie App
+	public static UIPanel panelGalerieApp;
+	public static UISprite panelGalerieAppBackground;
+	public static UISprite panelGalerieAppTopCorner;
+	#endregion
+
+	#region Panel Geo App
+	public static UIPanel panelGeoApp;
+	public static UISprite panelGeoAppTopCorner;
 	#endregion
 
 	public static void InitVariables()
@@ -49,6 +69,26 @@ public class MenuVariables
 		panelPrincipalAppTakeJobButton = GameObject.Find ("UI Root/PanelPrincipalApp/TakeJobButton").GetComponent<UIButton>();
 		panelPrincipalAppMissionsEnCoursButton = GameObject.Find ("UI Root/PanelPrincipalApp/MissionsEnCoursButton").GetComponent<UIButton>(); 
 		panelPrincipalAppNouvellesMissionsButton = GameObject.Find ("UI Root/PanelPrincipalApp/NouvellesMissionsButton").GetComponent<UIButton>(); 
+		panelPrincipalAppGPSButton = GameObject.Find("UI Root/PanelPrincipalApp/GPSButton").GetComponent<UIButton>(); 
+		panelPrincipalAppSMSButton = GameObject.Find("UI Root/PanelPrincipalApp/SMSButton").GetComponent<UIButton>();  
+		panelPrincipalAppGaleryButton = GameObject.Find("UI Root/PanelPrincipalApp/GaleryButton").GetComponent<UIButton>();  
+		#endregion
+
+		#region Panel Textos App
+		panelTextoApp = GameObject.Find("UI Root/PanelTextos").GetComponent<UIPanel>(); 
+		panelTextoAppBackground = GameObject.Find("UI Root/PanelTextos/Background").GetComponent<UISprite>();  
+		panelTextoAppTopCorner = GameObject.Find("UI Root/PanelTextos/TopCorner").GetComponent<UISprite>();  
+		#endregion
+
+		#region Panel Galerie App
+		panelGalerieApp = GameObject.Find("UI Root/PanelGalerie").GetComponent<UIPanel>(); 
+		panelGalerieAppBackground = GameObject.Find("UI Root/PanelGalerie/Background").GetComponent<UISprite>(); 
+		panelGalerieAppTopCorner = GameObject.Find("UI Root/PanelGalerie/TopCorner").GetComponent<UISprite>(); 
+		#endregion
+
+		#region Panel Geo App
+		panelGeoApp = GameObject.Find("UI Root/PanelGeo").GetComponent<UIPanel>(); 
+		panelGeoAppTopCorner = GameObject.Find("UI Root/PanelGeo/TopCorner").GetComponent<UISprite>();
 		#endregion
 	}
 }
